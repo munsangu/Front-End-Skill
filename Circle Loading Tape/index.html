@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circel Loading Tape</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+</head>
+<body>
+  <button type="button" class="restart">RESTART</button>
+  <div class="container">
+    <div class="card">
+      <div class="circular">
+        <div class="inner"></div>
+        <div class="numbers">100%</div>
+        <div class="circle">
+          <div class="bar left">
+            <div class="progress"></div>
+          </div>
+          <div class="bar right">
+            <div class="progress"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="circular">
+        <div class="inner"></div>
+        <div class="numbers">100%</div>
+        <div class="circle">
+          <div class="bar left">
+            <div class="progress"></div>
+          </div>
+          <div class="bar right">
+            <div class="progress"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="circular">
+        <div class="inner"></div>
+        <div class="numbers">100%</div>
+        <div class="circle">
+          <div class="bar left">
+            <div class="progress"></div>
+          </div>
+          <div class="bar right">
+            <div class="progress"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  const nums = document.querySelectorAll(".numbers");
+  const reBtn = document.querySelector(".restart");
+  let counter = 0;
+
+  setInterval(() => {
+    if(counter == 100) {
+      clearInterval()
+    } else {
+      counter++
+      nums.forEach(item => item.textContent = counter + "%");
+    }
+  }, 75);
+
+  reBtn.addEventListener("click", () => {
+    location.reload();
+  })
+</script>
+</html>
