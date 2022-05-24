@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAGE SCROLL EFFECTS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <section>
+    <p style="color: red;">SCROLL</p>
+    <span class="curve">
+      <img src="curve.png">
+    </span>
+  </section>
+  <script>
+    let scroll = document.querySelector(".curve");
+    window.addEventListener("scroll", function() {
+      let val = 1 + window.scrollY / 1200;
+      scroll.style.transform = `scaleY(${val})`;
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+* {
+  margin: 0 ;
+  padding: 0;
+}
+
+body {
+  background-color: #111;
+  height: 200vh;
+}
+
+section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #2abbff;
+}
+
+section p{
+  font-size: 100px;
+  color: #6667ab;
+  text-align: center;
+  position: absolute;
+  top: 70%;
+  left: 39%;
+  z-index: 3;
+}
+
+section .curve {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: -200px;
+  transform-origin: top;
+}
+
+section .curve img {
+  width: 100%;
+  height: 100%;
+
+}
