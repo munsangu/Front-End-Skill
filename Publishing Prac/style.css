@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Oswald:wght@400;700&display=swap');
+
+* {margin: 0; padding: 0; border: 0; box-sizing: border-box; font-family: "Noto Sans KR", sans-serif; letter-spacing: -1px;}
+
+.common_box{width: 100%; float:left; min-width:1200px;}
+.common_box > div{ width: 1200px; margin: 0 auto;}
+.common_box > div > div{width: 100%; float: left;}
+.common_box .container {width: 100%; float: left; padding: 0 194px;}
+
+.common_box .top {width: 100%; float: left; margin-top: 70px;}
+.common_box .top .num {width: 100%; float: left; text-align: center; color: #aaa; font-size: 45px; font-weight: 700;}
+.common_box .top .information {width: 100%; float: left; text-align: center; color: #010101; font-size: 45px; font-weight: 700;}
+
+.common_box .content {width: 100%; float: left; margin-top: 70px; border:3px solid #4e3ca0; border-radius: 26px;}
+.common_box .content .warning {width: 100%; float: left; background-color: #4e3ca0; border-radius: 20px 20px 0 0; text-align: center; font-size: 32px; font-weight: 500; color: #b6b0d4; padding: 10px 0;}
+.common_box .content .date {width: 100%; float: left; padding: 20px 0; border-radius: 0 0 20px 20px;}
+.common_box .date > div {width: 100%; float: left; padding: 5px 0; text-align: center; font-size: 24px; font-weight: 500; border-bottom: 1px dashed #c0c0c0;}
+.common_box .date > div:last-child {border: none;}
+.common_box .date .check {width: 13%; float: left; text-align: right; font-size: inherit; font-weight: 700; color: #0e3ca0;}
+.common_box .date .reception {width: 21%; float: left; margin-left: 20px; text-align: left; font-size: inherit; font-weight: 500;  letter-spacing: 0;}
+.common_box .date .yymmdd {width: 63%; float: left; text-align: left; font-size: inherit; font-weight: 500; letter-spacing: 0;}
+.common_box .date .yymmdd > span {font-size: inherit; font-weight: 500; color: #cc3333; letter-spacing: 0;}
+
+.common_box .alert {width: 100%; float: left; font-size: 16px; color: #8c8c8c; margin-top: 20px; padding-left: 10px; letter-spacing: 0;}
