@@ -6,7 +6,7 @@ const listOfDays = ["Sunday", "Monday", "Thusday", "wednesday", "Thurday", "Frid
 
 function printDate() {
   let day = date.getDate();
-  let month = date.getMonth();
+  let month = date.getMonth() + 1;
   if(month < 10) {
     month = `0${month}`
   }
