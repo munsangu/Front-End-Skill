@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #EFEFEF;
+}
+
+.container .date {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.container .date#printTime {
+  color: #E74C3C;
+}
+
+.container .date#printDate {
+  color: #2ECC71;
+  margin: 0 20px;
+}
+
+.container .date#printDay {
+  color: #9B59B6;
+}
+
