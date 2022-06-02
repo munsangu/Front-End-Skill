@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIMPLE IMAGE COMPARISON SLIDER</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==' crossorigin='anonymous'></script>
+</head>
+<body>
+  <figure class="cd-image-container">  
+    <img src="https://source.unsplash.com/KbR06h9dNQw/768x460" alt="Original Image">  
+    <span class="cd-image-label" data-type="original">Crowded</span>  
+    <div class="cd-resize-img"> <!-- the resizable image on top -->  
+         <img src="https://source.unsplash.com/jFCViYFYcus/768x460" alt="Modified Image">  
+         <span class="cd-image-label" data-type="modified">Quiet</span>  
+    </div>  
+    <span class="cd-handle"></span>  
+  </figure>  
+  <header>  
+  <h1>Image Comparison Slider</h1>  
+  </header>  
+</body>
+</html>
