@@ -1,0 +1,21 @@
+.logo {
+  font-size: 8rem;
+  text-shadow: 0 0 100px;
+  animation: animate 2s infinite linear;
+  margin:25% 50%;
+}
+
+@keyframes animate {
+  0%, 100% {
+    color: lawngreen;
+  }
+  25% {
+    color: deeppink;
+  }
+  50% {
+    color: deepskyblue;
+  }
+  75% {
+    color: white;
+  }
+}
