@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.box {
+  position: relative;
+  width: 600px;
+  height: 200px;
+  border-bottom: 2px solid #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box label {
+  position: relative;
+  width: 100%;
+  height: 33.3333%;
+  border: 2px solid #555;
+  border-bottom: none;
+}
+
+.box label input {
+  position: relative;
+  appearance: none;
+  z-index: 10;
+}
+
+.box label i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 600px;
+}
+
+.box label:nth-child(1) i {
+  background-image: url(01.jpg);
+  animation: animate .5s steps(3) infinite;
+}
+
+.box label:nth-child(2) i {
+  background-image: url(02.jpg);
+  animation: animate .4s steps(3) infinite;
+}
+
+.box label:nth-child(3) i {
+  background-image: url(03.jpg);
+  animation: animate .7s steps(3) infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 600px;
+  }
+}
+
+.box label input:checked  ~ i {
+  animation-play-state: paused;
+}
+
+.reset {
+  margin-top: 40px;
+  font-size: 1.25em;
+  border: none;
+  padding: 10px 25px;
+  background-color: #333;
+  color: #FFF;
+}
+
+.reset:active {
+  background-color: #D63C3C;
+  transform: scale(0.95);
+}
+
