@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #DCD9CD;
+}
+
+ul li {
+  list-style: none;
+  text-align: center;
+}
+
+ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 3em;
+  font-weight: 700;
+  padding: 5px 20px;
+  display: inline-flex;
+  transition: .5s;
+}
+
+ul:hover li a {
+  color: #0002;
+}
+
+ul li:hover a {
+  color: #000;
+  background-color: transparent;
+}
+
+ul li a:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5em;
+  font-weight: 900;
+  color: rgba(0, 0, 0, .1);
+  z-index: -1;
+  opacity: 0;
+  text-transform: uppercase;
+  letter-spacing: 500px;
+  transition: letter-spacing .5s, left .5s;
+}
+
+ul li a:hover:before {
+  content: attr(data-text);
+  opacity: 1;
+  left: 50%;
+  letter-spacing: 10px;
+  width: 2400px;
+  height: 2400px;
+}
+
+ul li:nth-child(6n + 1) a:before {
+  background-color: #0470FE;
+}
+
+ul li:nth-child(6n + 2) a:before {
+  background-color: #FF7675;
+}
+
+ul li:nth-child(6n + 3) a:before {
+  background-color: #1582FE;
+}
+
+ul li:nth-child(6n + 4) a:before {
+  background-color: #A29BFE;
+}
+
+ul li:nth-child(6n + 5) a:before {
+  background-color: #FD79A8;
+}
+
+ul li:nth-child(6n + 6) a:before {
+  background-color: #FFEAA7;
+}
+
+
