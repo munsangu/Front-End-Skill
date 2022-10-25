@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    height: 50vh;
+    display: grid;
+    place-items: center;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #FF9540;
+    position: relative;
+    box-shadow: 0 0 10px #FF4500, 0 0 40px #FF4500, 0 0 80px #FF4500;
+}
+
+.circle::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #000;
+    animation: animate 3s linear infinite alternate;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50px, 50px) scale(0.9);  
+    }
+    50%, 75% {
+        transform: translate(0px, 0px) scale(1.02);
+        box-shadow: 0 0 10px #F9F3F2 0 0 80px 8px #C79388;
+    }
+    100% {
+        transform: translate(50px, -50px) scale(0.9);
+        box-shadow: none;
+    }
+}
