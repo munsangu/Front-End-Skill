@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+  html,
+  body,
+  .cadre {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+  .cadre {
+    background-image: url("https://www.vocowallpaper.com/wallpapers/26/Dark%2C+blue%2C+background%2C+iOS+13--w26532--preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-image 0.6s;
+  
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .title {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.54);
+    border-radius: 8px;
+    color: #e8e8e8;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.54);
+    max-width: 90%;
+  }
+  .context-menu {
+    border-radius: 8px;
+    width: 150px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.54);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.54);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  
+    /* that's for the pen : */
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    /* 
+    but normally it's just :
+    display: none;
+    */
+  }
+  .btn {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+    font-size: 1.1em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.004em;
+    color: #e8e8e8;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    padding: 0 10px;
+  }
+  .btn div {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    transition: background-color 0.15s;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+  }
+  .btn:hover div {
+    background-color: rgba(147, 147, 147, 0.31);
+  }
+  #blue {
+    margin: 10px 0;
+  }
+  #green {
+    margin: 10px 0;
+  }
+  .browser-info {
+    font-family: "Quicksand", sans-serif;
+    background-color: rgba(0, 0, 0, 0.54);
+    border-radius: 8px;
+    color: #e8e8e8;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.54);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 850px;
+    max-width: 90%;
+    display: none;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+  }
+  .browser-info h1 {
+    font-size: 1.3em;
+    padding: 20px;
+    font-weight: 600;
+  }
+  .browser-info p {
+    font-size: 1.1em;
+    padding: 0 35px 20px 35px;
+    font-weight: 400;
+  }
+  
+  /* I want these words to stay on the same line. */
+  .nowrap {
+    white-space: nowrap;
+  }
