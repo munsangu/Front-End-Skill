@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARBUCKS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="./images/logo.png" class="logo" alt="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, alias ex eligendi quaerat itaque facere
+                    sint aliquid, unde, aut temporibus libero amet minus ipsam maxime laborum officia magni rerum vel
+                    ratione fugiat adipisci veritatis.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="./images/img1.png" alt="Starbucks" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./images/thumb1.png" alt="thumb1" onclick="imgSlider('./images/img1.png', '#017143')"></li>
+            <li><img src="./images/thumb2.png" alt="thumb2" onclick="imgSlider('./images/img2.png', '#EB7495')"></li>
+            <li><img src="./images/thumb3.png" alt="thumb3" onclick="imgSlider('./images/img3.png', '#D752B1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="./images/facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="./images/twitter.png" alt="twitter"></a></li>
+            <li><a href="#"><img src="./images/instagram.png" alt="instagram"></a></li>
+        </ul>
+    </section>
+    <script>
+        function imgSlider(anything, anything2) {
+            document.querySelector(".starbucks").src = anything;
+
+            const circle = document.querySelector(".circle");
+            circle.style.backgroundColor = anything2
+
+        }
+    </script>
+</body>
+
+</html>
