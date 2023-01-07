@@ -1,0 +1,41 @@
+:root {
+    --bar-color1: #1FE576;
+    --bar-color2: #D7E5DE;
+    --bar-width: 200px;
+    --bar-height: 20px;
+    --anim-duration: 3s;
+}
+
+body {
+    background-color: #B0B0B0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar {
+    position: relative;
+    margin-top: 25%;
+    width: var(--bar-width);
+    height: var(--bar-height);
+    border-radius: calc(var(--bar-height) / 2);
+    overflow: hidden;
+    background-color: var(--bar-color2);
+}
+
+.progress-bar::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: left center;
+    background-color: var(--bar-color1);
+    animation: progress var(--anim-duration) ease-out infinite;
+}
+
+@keyframes progress {
+    to {
+        transform: scaleX(1);
+    }
+}
