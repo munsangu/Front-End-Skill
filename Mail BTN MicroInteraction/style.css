@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #222;
+}
+
+
+.wrapper {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.animated-mail {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    transition: .4s;
+}
+
+.animated-mail .body {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 200px;
+    border-color: transparent transparent #E95F55 transparent;
+    z-index: 2;
+}
+
+.animated-mail .top-fold {
+    position: absolute;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 100px 0 100px;
+    transform-origin: 50% 0;
+    transition: transform .4s .4s, z-index .2s .4s;
+    border-color: #CF4A43 transparent transparent transparent;
+    z-index: 2;
+}
+
+.animated-mail .back-fold {
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    height: 100px;
+    background-color: #CF4A43;
+    z-index: 0;
+}
+
+.animated-mail .left-fold {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 0 50px 100px;
+    border-color: transparent transparent transparent #E15349;
+    z-index: 2;
+}
+
+.animated-mail .letter {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    width: 160px;
+    height: 60px;
+    background-color: #FFF;
+    overflow: hidden;
+    -webkit-transition: .4s .2s;
+    -moz-transition: .4s .2s;
+    transition: .4s .2s;
+    z-index: 1;
+}
+
+.animated-mail .letter .letter-border {
+    width: 100%;
+    height: 10px;
+    background: repeating-linear-gradient(-45deg, #CB5A5E, #CB5A5E 8px, transparent 8px, transparent 10px);
+}
+
+.animated-mail .letter .letter-title {
+    width: 40%;
+    height: 10px;
+    background-color: #CB5A5E;
+    margin: 10px 0 0 5px;
+}
+
+.animated-mail .letter .letter-context {
+    width: 20%;
+    height: 10px;
+    background-color: #CB5A5E;
+    margin: 10px 0 0 5px;
+}
+
+.animated-mail .letter .letter-stamp {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin: 30px 0 0 120px;
+    background-color: #CB5A5E;
+    opacity: .3;
+}
+
+.wrapper:hover .animated-mail {
+    transform: translateY(50px);
+}
+
+.wrapper:hover .animated-mail .top-fold {
+    transition: transform .4s, z-index .2s;
+    transform: rotateX(180deg);
+    z-index: 0;
+}
+
+.wrapper:hover .animated-mail .letter {
+    height: 180px;
+}
