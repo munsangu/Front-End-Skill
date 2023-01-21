@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #222;
+}
+
+.blob-effect {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+
+.blob-effect span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #A9FF68;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: .5s;
+    animation: rotate-blob 5s linear infinite;
+}
+
+.blob-effect:hover span:nth-child(1) {
+    background-color: #D76BB1;
+    border: none;
+}
+
+.blob-effect span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:  2px solid #a9FF68;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: .5s;
+    animation: rotate-blob 4s linear infinite;
+}
+
+.blob-effect:hover span:nth-child(2) {
+    background-color: #F192D0;
+    border: none;
+}
+
+.blob-effect span:nth-child(3) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:  2px solid #a9FF68;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: .5s;
+    animation: rotate-blob2 10s linear infinite;
+}
+
+.blob-effect:hover span:nth-child(3) {
+    background-color: #F06EC294;
+    border: none;
+}
+
+@keyframes rotate-blob {
+    0%  {
+        transform: rotate(0);
+    }
+    100%  {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-blob2 {
+    0%  {
+        transform: rotate(360def);
+    }
+
+    100%  {
+        transform: rotate(0);
+    }
+}
+
