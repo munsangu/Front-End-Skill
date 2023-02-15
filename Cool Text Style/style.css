@@ -1,0 +1,13 @@
+body {
+    background-color: #DC143C;
+}
+
+span {
+    font-size: 7rem;
+    letter-spacing: .5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 7px 7px #FFA500, 18px 18px #000;
+}
