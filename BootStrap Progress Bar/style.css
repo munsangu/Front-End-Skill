@@ -1,0 +1,24 @@
+
+.progress .progress-bar{
+    -webkit-animation: progress 5s; /* Safari 4+ */
+    -moz-animation:    progress 5s; /* Fx 5+ */
+    -o-animation:      progress 5s; /* Opera 12+ */
+    animation:         progress 5s; /* IE 10+ */
+  }
+  
+  @-webkit-keyframes progress {
+    0%   { width: 0%; }
+    100% { width: 100%; }
+  }
+  @-moz-keyframes progress {
+    0%   { width: 0%; }
+    100% { width: 100%; }
+  }
+  @-o-keyframes progress {
+    0%   { width: 0%; }
+    100% { width: 100%; }
+  }
+  @keyframes progress {
+    0%   { width: 0%; }
+    100% { width: 100%; }
+  }
