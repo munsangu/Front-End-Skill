@@ -7,17 +7,15 @@ class CircleAnimation extends Component {
 
     this.state = {
       positions1: new Animated.ValueXY({ x: 0, y: 0 }),
-      positions2: new Animated.ValueXY({ x: 0, y: 10 }),
-      positions3: new Animated.ValueXY({ x: 0, y: 20 }),
-      positions4: new Animated.ValueXY({ x: 0, y: 0 }),
-      positions5: new Animated.ValueXY({ x: 0, y: 10 }),
-      positions6: new Animated.ValueXY({ x: 0, y: 20 }),
-      positions7: new Animated.ValueXY({ x: 0, y: 60 }),
-      positions8: new Animated.ValueXY({ x: 0, y: 70 }),
-      positions9: new Animated.ValueXY({ x: 0, y: 80 }),
-      positions10: new Animated.ValueXY({ x: 0, y: 60 }),
-      positions11: new Animated.ValueXY({ x: 0, y: 70 }),
-      positions12: new Animated.ValueXY({ x: 0, y: 80 }),
+      positions2: new Animated.ValueXY({ x: 0, y: 1 }),
+      positions3: new Animated.ValueXY({ x: 0, y: 2 }),
+      positions4: new Animated.ValueXY({ x: 0, y: 3 }),
+      positions5: new Animated.ValueXY({ x: 0, y: 4 }),
+      positions6: new Animated.ValueXY({ x: 0, y: 5 }),
+      positions7: new Animated.ValueXY({ x: 0, y: 6 }),
+      positions8: new Animated.ValueXY({ x: 0, y: 7 }),
+      positions9: new Animated.ValueXY({ x: 0, y: 8 }),
+      positions10: new Animated.ValueXY({ x: 0, y: 9 }),
     };
   }
 
@@ -25,122 +23,52 @@ class CircleAnimation extends Component {
     Animated.loop(
       Animated.sequence([
         Animated.timing(this.state.positions1, {
-          toValue: { x: 315, y: 0 },
-          duration: 300,
-          useNativeDriver: true,
-        }),
-        Animated.timing(this.state.positions1, {
-          toValue: { x: 0, y: 0 },
+          toValue: { x: 320, y: 0 },
           duration: 300,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions2, {
-          toValue: { x: 315, y: 10 },
-          duration: 300,
-          useNativeDriver: true,
-        }),
-        Animated.timing(this.state.positions2, {
-          toValue: { x: 0, y: 10 },
+          toValue: { x: 320, y: 1 },
           duration: 300,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions3, {
-          toValue: { x: 315, y: 20 },
-          duration: 300,
-          useNativeDriver: true,
-        }),
-        Animated.timing(this.state.positions3, {
-          toValue: { x: 0, y: 20 },
+          toValue: { x: 320, y: 2 },
           duration: 300,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions4, {
-          toValue: { x: -315, y: 0 },
-          duration: 300,
-          useNativeDriver: true,
-        }),
-        Animated.timing(this.state.positions4, {
-          toValue: { x: 0, y: 0 },
+          toValue: { x: 320, y: 3 },
           duration: 300,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions5, {
-          toValue: { x: -315, y: 10 },
-          duration: 300,
-          useNativeDriver: true,
-        }),
-        Animated.timing(this.state.positions5, {
-          toValue: { x: 0, y: 10 },
+          toValue: { x: 320, y: 4 },
           duration: 300,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions6, {
-          toValue: { x: -315, y: 20 },
-          duration: 300,
-          useNativeDriver: true,
-        }),
-        Animated.timing(this.state.positions6, {
-          toValue: { x: 0, y: 20 },
+          toValue: { x: 320, y: 5 },
           duration: 300,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions7, {
-          toValue: { x: 315, y: 60 },
-          duration: 300,
-          useNativeDriver: true,
-        }),
-        Animated.timing(this.state.positions7, {
-          toValue: { x: 0, y: 60 },
+          toValue: { x: 320, y: 6 },
           duration: 300,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions8, {
-          toValue: { x: 315, y: 70 },
-          duration: 300,
-          useNativeDriver: true,
-        }),
-        Animated.timing(this.state.positions8, {
-          toValue: { x: 0, y: 70 },
+          toValue: { x: 320, y: 7 },
           duration: 300,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions9, {
-          toValue: { x: 315, y: 80 },
-          duration: 300,
-          useNativeDriver: true,
-        }),
-        Animated.timing(this.state.positions9, {
-          toValue: { x: 0, y: 80 },
+          toValue: { x: 320, y: 8 },
           duration: 300,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions10, {
-          toValue: { x: -315, y: 60 },
-          duration: 300,
-          useNativeDriver: true,
-        }),
-        Animated.timing(this.state.positions10, {
-          toValue: { x: 0, y: 60 },
-          duration: 300,
-          useNativeDriver: true,
-        }),
-        Animated.timing(this.state.positions11, {
-          toValue: { x: -315, y: 70 },
-          duration: 300,
-          useNativeDriver: true,
-        }),
-        Animated.timing(this.state.positions11, {
-          toValue: { x: 0, y: 70 },
-          duration: 300,
-          useNativeDriver: true,
-        }),
-        Animated.timing(this.state.positions12, {
-          toValue: { x: -315, y: 80 },
-          duration: 300,
-          useNativeDriver: true,
-        }),
-        Animated.timing(this.state.positions12, {
-          toValue: { x: 0, y: 80 },
+          toValue: { x: 320, y: 9 },
           duration: 300,
           useNativeDriver: true,
         }),
@@ -150,22 +78,22 @@ class CircleAnimation extends Component {
 
   render() {
     return (
-      <SafeAreaView style={{ flex: 1 }}>
+      <SafeAreaView style={{ flex: 1, backgroundColor: "#333" }}>
         <View
           style={{
             flex: 1,
             alignItems: "center",
             justifyContent: "center",
             position: "absolute",
-            top: 50,
+            top: 0,
             left: 0,
           }}
         >
           <Animated.View
             style={{
-              width: 100,
-              height: 100,
-              borderRadius: 50,
+              width: 70,
+              height: 70,
+              borderRadius: 35,
               backgroundColor: "#F00",
               transform: [
                 { translateX: this.state.positions1.x },
@@ -175,9 +103,9 @@ class CircleAnimation extends Component {
           />
           <Animated.View
             style={{
-              width: 100,
-              height: 100,
-              borderRadius: 50,
+              width: 70,
+              height: 70,
+              borderRadius: 35,
               backgroundColor: "#FE8502",
               transform: [
                 { translateX: this.state.positions2.x },
@@ -187,9 +115,9 @@ class CircleAnimation extends Component {
           />
           <Animated.View
             style={{
-              width: 100,
-              height: 100,
-              borderRadius: 50,
+              width: 70,
+              height: 70,
+              borderRadius: 35,
               backgroundColor: "#FDFD00",
               transform: [
                 { translateX: this.state.positions3.x },
@@ -197,22 +125,11 @@ class CircleAnimation extends Component {
               ],
             }}
           />
-        </View>
-        <View
-          style={{
-            flex: 1,
-            alignItems: "center",
-            justifyContent: "center",
-            position: "absolute",
-            top: 50,
-            right: 0,
-          }}
-        >
           <Animated.View
             style={{
-              width: 100,
-              height: 100,
-              borderRadius: 50,
+              width: 70,
+              height: 70,
+              borderRadius: 35,
               backgroundColor: "#5EB2B9",
               transform: [
                 { translateX: this.state.positions4.x },
@@ -222,9 +139,9 @@ class CircleAnimation extends Component {
           />
           <Animated.View
             style={{
-              width: 100,
-              height: 100,
-              borderRadius: 50,
+              width: 70,
+              height: 70,
+              borderRadius: 35,
               backgroundColor: "#008929",
               transform: [
                 { translateX: this.state.positions5.x },
@@ -234,9 +151,9 @@ class CircleAnimation extends Component {
           />
           <Animated.View
             style={{
-              width: 100,
-              height: 100,
-              borderRadius: 50,
+              width: 70,
+              height: 70,
+              borderRadius: 35,
               backgroundColor: "#0497BD",
               transform: [
                 { translateX: this.state.positions6.x },
@@ -244,22 +161,11 @@ class CircleAnimation extends Component {
               ],
             }}
           />
-        </View>
-        <View
-          style={{
-            flex: 1,
-            alignItems: "center",
-            justifyContent: "center",
-            position: "absolute",
-            top: 330,
-            left: 0,
-          }}
-        >
           <Animated.View
             style={{
-              width: 100,
-              height: 100,
-              borderRadius: 50,
+              width: 70,
+              height: 70,
+              borderRadius: 35,
               backgroundColor: "#0052A7",
               transform: [
                 { translateX: this.state.positions7.x },
@@ -269,9 +175,9 @@ class CircleAnimation extends Component {
           />
           <Animated.View
             style={{
-              width: 100,
-              height: 100,
-              borderRadius: 50,
+              width: 70,
+              height: 70,
+              borderRadius: 35,
               backgroundColor: "#012B95",
               transform: [
                 { translateX: this.state.positions8.x },
@@ -281,9 +187,9 @@ class CircleAnimation extends Component {
           />
           <Animated.View
             style={{
-              width: 100,
-              height: 100,
-              borderRadius: 50,
+              width: 70,
+              height: 70,
+              borderRadius: 35,
               backgroundColor: "#98118C",
               transform: [
                 { translateX: this.state.positions9.x },
@@ -291,50 +197,15 @@ class CircleAnimation extends Component {
               ],
             }}
           />
-        </View>
-        <View
-          style={{
-            flex: 1,
-            alignItems: "center",
-            justifyContent: "center",
-            position: "absolute",
-            top: 330,
-            right: 0,
-          }}
-        >
           <Animated.View
             style={{
-              width: 100,
-              height: 100,
-              borderRadius: 50,
+              width: 70,
+              height: 70,
+              borderRadius: 35,
               backgroundColor: "#DE066A",
               transform: [
                 { translateX: this.state.positions10.x },
                 { translateY: this.state.positions10.y },
-              ],
-            }}
-          />
-          <Animated.View
-            style={{
-              width: 100,
-              height: 100,
-              borderRadius: 50,
-              backgroundColor: "#000",
-              transform: [
-                { translateX: this.state.positions11.x },
-                { translateY: this.state.positions11.y },
-              ],
-            }}
-          />
-          <Animated.View
-            style={{
-              width: 100,
-              height: 100,
-              borderRadius: 50,
-              backgroundColor: "#667ABA",
-              transform: [
-                { translateX: this.state.positions12.x },
-                { translateY: this.state.positions12.y },
               ],
             }}
           />
