@@ -2,8 +2,8 @@
 // 2. 화면 내  10개의 원이 순차적으로 움직이되, 도착 전에 다음 원이 움직이기 시작할 것
 // 3. 속도는 적당한 빠르기로 설정
 
-import React, { Component } from "react";
-import { View, Animated } from "react-native";
+import React, { Component, useEffect, useState } from "react";
+import { View, Animated, Dimensions } from "react-native";
 
 class CircleAnimation extends Component {
   constructor(props) {
@@ -29,65 +29,65 @@ class CircleAnimation extends Component {
       Animated.parallel([
         Animated.timing(this.state.positions1, {
           toValue: { x: 330, y: 0 },
-          duration: 120,
+          duration: 300,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions2, {
           toValue: { x: 330, y: 1 },
-          duration: 120,
+          duration: 300,
           delay: 50,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions3, {
           toValue: { x: 330, y: 2 },
-          duration: 120,
+          duration: 300,
           delay: 90,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions4, {
           toValue: { x: 330, y: 3 },
-          duration: 120,
+          duration: 300,
           delay: 120,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions5, {
           toValue: { x: 330, y: 4 },
-          duration: 120,
+          duration: 300,
           delay: 170,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions6, {
           toValue: { x: 330, y: 5 },
-          duration: 120,
+          duration: 300,
           delay: 200,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions7, {
           toValue: { x: 330, y: 6 },
-          duration: 120,
+          duration: 300,
           delay: 220,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions8, {
           toValue: { x: 330, y: 7 },
-          duration: 120,
+          duration: 300,
           delay: 250,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions9, {
           toValue: { x: 330, y: 8 },
-          duration: 120,
+          duration: 300,
           delay: 270,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions10, {
           toValue: { x: 330, y: 9 },
-          duration: 120,
+          duration: 300,
           delay: 310,
           useNativeDriver: true,
         }),
         // Animated.timing(this.state.positions11, {
-        //   toValue: { x: 330, y: 10 },
+        //   toValue: { x: chartWidth, y: 10 },
         //   duration: 100,
         //   delay: 450,
         //   useNativeDriver: true,
