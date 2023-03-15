@@ -3,7 +3,7 @@
 // 3. 속도는 적당한 빠르기로 설정
 
 import React, { Component } from "react";
-import { View, Animated, SafeAreaView } from "react-native";
+import { View, Animated } from "react-native";
 
 class CircleAnimation extends Component {
   constructor(props) {
@@ -98,7 +98,7 @@ class CircleAnimation extends Component {
 
   render() {
     return (
-      <SafeAreaView style={{ flex: 1, backgroundColor: "#333" }}>
+      <View style={{ flex: 1, backgroundColor: "#333" }}>
         <View
           style={{
             flex: 1,
@@ -230,7 +230,7 @@ class CircleAnimation extends Component {
             }}
           />
         </View>
-      </SafeAreaView>
+      </View>
     );
   }
 }
