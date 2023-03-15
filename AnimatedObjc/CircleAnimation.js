@@ -1,3 +1,7 @@
+// 1. 그래픽 추가 시 과부하 점검
+// 2. 화면 내  10개의 원이 순차적으로 움직이되, 도착 전에 다음 원이 움직이기 시작할 것
+// 3. 속도는 적당한 빠르기로 설정
+
 import React, { Component } from "react";
 import { View, Animated, SafeAreaView } from "react-native";
 
@@ -16,62 +20,78 @@ class CircleAnimation extends Component {
       positions8: new Animated.ValueXY({ x: 0, y: 7 }),
       positions9: new Animated.ValueXY({ x: 0, y: 8 }),
       positions10: new Animated.ValueXY({ x: 0, y: 9 }),
+      // positions11: new Animated.ValueXY({ x: 0, y: 10 }),
     };
   }
 
   componentDidMount() {
     Animated.loop(
-      Animated.sequence([
+      Animated.parallel([
         Animated.timing(this.state.positions1, {
-          toValue: { x: 320, y: 0 },
-          duration: 300,
+          toValue: { x: 330, y: 0 },
+          duration: 120,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions2, {
-          toValue: { x: 320, y: 1 },
-          duration: 300,
+          toValue: { x: 330, y: 1 },
+          duration: 120,
+          delay: 50,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions3, {
-          toValue: { x: 320, y: 2 },
-          duration: 300,
+          toValue: { x: 330, y: 2 },
+          duration: 120,
+          delay: 90,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions4, {
-          toValue: { x: 320, y: 3 },
-          duration: 300,
+          toValue: { x: 330, y: 3 },
+          duration: 120,
+          delay: 120,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions5, {
-          toValue: { x: 320, y: 4 },
-          duration: 300,
+          toValue: { x: 330, y: 4 },
+          duration: 120,
+          delay: 170,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions6, {
-          toValue: { x: 320, y: 5 },
-          duration: 300,
+          toValue: { x: 330, y: 5 },
+          duration: 120,
+          delay: 200,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions7, {
-          toValue: { x: 320, y: 6 },
-          duration: 300,
+          toValue: { x: 330, y: 6 },
+          duration: 120,
+          delay: 220,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions8, {
-          toValue: { x: 320, y: 7 },
-          duration: 300,
+          toValue: { x: 330, y: 7 },
+          duration: 120,
+          delay: 250,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions9, {
-          toValue: { x: 320, y: 8 },
-          duration: 300,
+          toValue: { x: 330, y: 8 },
+          duration: 120,
+          delay: 270,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.positions10, {
-          toValue: { x: 320, y: 9 },
-          duration: 300,
+          toValue: { x: 330, y: 9 },
+          duration: 120,
+          delay: 310,
           useNativeDriver: true,
         }),
+        // Animated.timing(this.state.positions11, {
+        //   toValue: { x: 330, y: 10 },
+        //   duration: 100,
+        //   delay: 450,
+        //   useNativeDriver: true,
+        // }),
       ])
     ).start();
   }
